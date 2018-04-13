@@ -1,0 +1,39 @@
+void setup(){
+  //this is the part that tells processing how to start up the console 
+  size(1300,530); //indicates size of start up window
+  background(200); // indicates background color of start up window
+}
+
+void draw(){
+  /*this is the part of the code that tells processing what to print on the console*/
+  
+  strokeWeight(2);
+  fill(130);
+  rect(670,460,90,530);//big rectangle 1
+  
+  
+  strokeWeight(5);
+  noFill();
+  rect(600,150,230,530);//smaller inner rectangle 2
+  
+  strokeWeight(5);
+  fill(0);
+  ellipseMode(CENTER);
+  ellipse(715,100,25,55); //black ellipse 1
+  
+  strokeWeight(2);
+  line(715,150,715,55);//line through ellipse 1
+  
+  line(700,55,730,55);
+  
+  strokeWeight(8);
+  point(700,55);
+  
+  point(730,55);
+  
+  
+  strokeWeight(2);
+  ellipseMode(RADIUS);
+  ellipse(730,510,7,3);
+  
+}
